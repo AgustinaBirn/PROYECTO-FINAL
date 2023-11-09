@@ -1,0 +1,138 @@
+main{
+    .article{
+        .section-contacto1{
+            width: 100%;
+            margin-top: 70px;;
+            margin-block-end: 50px;
+            form{
+                margin-block-end: 35px;
+                padding: 15px;
+                border-radius: 10px;
+                background-color: rgba(224, 170, 119, 0.2);
+                .cf-cover{
+                    .session-title{
+                        justify-content: center;
+                        .titulo-form{
+                            text-align: center;
+                            padding-block-end: 15px;
+                        }
+                        .parrafo-form{
+                            text-align: center;
+                            padding-block-end: 24px;
+                        }
+                    }
+                    .fila-form{
+                        margin-block-end: 15px;
+                    }
+                    .boton-formulario{
+                        background-color:map-get($colores, header);
+                        border: #80461d;
+                        transition: 0.5s;
+                        &:hover{
+                            background-color: #80461d;
+                            color: bisque;
+                            border-color: #421f06;
+                        }
+                    }
+                }
+            }
+            .mapa{
+                width: 100%;
+                height: 610px;
+                border-radius: 10px;
+
+            }
+        }
+        .section-contacto2{
+            width: 100%;
+            height: 100%;
+            @extend %flex-center;
+            .titulo-contacto{
+                height: 60px;
+                width: 100%;
+                margin-top: 30px;
+                margin-block-end: 45px;
+                @extend %flex-center;
+                .h1-contacto{
+                    width: 200px;
+                    font-size: 30px;
+                    padding: 0px;
+                    margin: 0px;
+                    text-align: center;
+                }
+            }
+            .medios-contacto{
+                height: 100%;
+                width: 100%;
+                padding: 0px;
+                margin-block-end: 50px;
+                .link-cont-personal{
+                    height: 400px;
+                    margin-block-end: 10px;
+                    @extend %flex-center;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    background-color: rgba(32, 38, 121, 0.1);
+                    .titulo-personal{
+                        height: 70px;
+                        width: 100%;
+                        border-radius: 20px;
+                        box-shadow: 0 0 20px rgba(128, 70, 29, 0.432);
+                        @extend %flex-center;
+                        background-color: #7C9070;
+                        h2{
+                            font-size: 18px;
+                            height: 70px;
+                            width: 200px;
+                            margin: 0px;
+                            color: aliceblue;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            flex-direction: row;
+                        }
+                    }
+                    .link-cont-pers-b{
+                        height: 180px;
+                        width: 250px;
+                        @extend %flex-center-evenly;
+                        flex-direction: column;
+                        @extend .link;
+                    }
+                }
+                .link-redes-sociales{
+                    height: 400px;
+                    @extend %flex-center;
+                    flex-direction: column;
+                    border-radius: 10px;
+                    background-color: rgba(32, 38, 121, 0.1);
+                    .titulo-rrss{
+                        height: 70px;
+                        width: 100%;
+                        padding: 0px;
+                        @extend %flex-center;
+                        background-color: #7C9070;
+                        border-radius: 20px;
+                        box-shadow: 0 0 20px rgba(128, 70, 29, 0.432);
+                        h2{
+                            font-size: 18px;
+                            height: 70px;
+                            padding: 0px;
+                            margin: 0px;
+                            color: aliceblue;
+                            @extend %flex-center;
+                        }
+                    }
+                    .link-cont-rrss{
+                        width: 100%;
+                        height: 179px;
+                        @extend %flex-center-evenly;
+                        flex-direction: column;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}

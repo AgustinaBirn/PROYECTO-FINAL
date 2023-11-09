@@ -1,0 +1,122 @@
+
+    header{
+        grid-area: header;
+        width: 100%;
+        .navbar{
+            background-color:map-get($colores, header);
+            padding-left: 40px;
+            padding-right: 40px;
+            .navbar-collapse{
+                .btn-buscar{
+                    border-color: #80461d;
+                    color: #80461d;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: #80461d;
+                        color: bisque;
+                        border-color: #421f06;
+                    }
+                }
+                .nav-item{
+                    .nav-link{
+                        color: aliceblue;
+                        transition: 0.5s;
+                        &:hover{
+                            color: #80461d;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*header{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex ; 
+        flex-wrap: wrap;  
+        flex-direction: column;
+        background-color:map-get($colores, header);
+        nav{
+            display: grid;
+            grid-template-areas:
+            "area-uno area-dos";
+            grid-template-rows: 1fr ;
+            grid-template-columns: 1fr 1fr;
+            justify-content:space-between;
+            align-items: flex-end;
+            .area-uno{
+            grid-area: area-uno;
+            justify-content: space-between;
+            display: grid;
+            grid-template-areas:
+                "logo buscador";
+                grid-template-rows: 1fr ;
+                grid-template-columns: 1fr fr;
+                justify-content:space-around;
+                align-items: center;
+                align-content: center;
+                .logo{
+                    width: 160px;
+                    height: 80px;
+                    grid-area: logo;
+                    @extend %flex-center;
+                    a{
+                        padding: 10px;
+                        @extend %flex-center;
+                        img{
+                            height: 60px;
+                            width: 165px;
+                        }
+                    }
+                }
+                .form-buscador{
+                    grid-area: buscador;
+                    height: 80px;
+                    @extend %flex-center;
+                    form{
+                        width: 240px;
+                        .form-buscador-b{
+                            width: 240px;   
+                        }
+                    }
+                }
+            }
+            .area-dos{
+                height: 80px;
+                grid-area: area-dos;
+                @extend %flex-center;
+                justify-items: end;
+                
+                ul{
+                    height: 100%;
+                    width: 530px;
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    .nav-items{
+                        width: 500px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-content: flex-end;
+                        align-items: center;
+                        div{
+                            li{
+                                a{
+                                    height: 100%;
+                                    color: aliceblue;
+                                    text-decoration: none;
+                                    &:hover{
+                                        color: #80461d;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }*/

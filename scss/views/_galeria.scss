@@ -1,0 +1,133 @@
+main{
+    .article{
+        .titulo-pagina{
+            width: 100%;
+            .principal-gal{
+                width: 100%;
+                height: 100px;
+                margin-top: 30px;
+                margin-block-end: 30px;
+                @extend %flex-center;
+                flex-direction: column;
+                .titulo-gal{
+                    height: 40px;
+                    width: 100%;
+                    @extend %flex-center;
+                    border-radius: 13px;
+                    background-color: #586d4c65;
+                    margin-block-end: 20px;
+                    h1{
+                        height: 40px;
+                        width: 100%;
+                        font-size: 30px;
+                        margin: 0px;
+                        color: aliceblue;
+                        @extend %flex-center;
+                    }
+                }
+                .parrafo-gal{
+                    @extend %flex-center;
+                    .p-gal{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .principal-fotos{
+            width: 100%;
+            height: 100%;
+            .contenido-fotos{
+                height: 100%;
+                width: 100%;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .titulo-fotos{
+                    height: 30px;
+                    h2{
+                        font-size: 20px;
+                        color: rgba(23, 37, 117, 0.3);
+                    }
+                }
+                .albumes{
+                    height: 100%;
+                    padding-top: 40px;
+                    padding-block-end: 50px;
+                    .cards{
+                        margin-block-end: 40px;
+                        .card{
+                            height: 320px; 
+                            overflow: hidden;
+                            transition: 1s;
+                            border-radius: 20px;
+                            box-shadow: 0 0 20px #8a550fa8;
+                            &:hover{
+                                transform: scale(1.1,1.1);
+                                cursor: pointer;
+                            }
+                            .card-img-top{
+                                height: 200px;
+                                transition: 1s;
+                                &:hover{
+                                    transform: scale(1.1,1.1);
+                                }
+                            } 
+                            
+                            .card-body{
+                                padding: 0px;
+                                margin-top: 12px;
+                                margin-left: 10px;
+                                margin-right: 10px;
+                            }                      
+                        }
+                    }
+                }
+            }
+        }
+        .principal-videos{
+            height: 100%;
+            width: 100%;
+            margin-block-end: 50px;
+            .contenido-videos{
+                height: 100%;
+                width: 100%;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .titulo-videos{
+                    height: 30px;
+                    h2{
+                        font-size: 20px;
+                        color: rgba(23, 37, 117, 0.3);
+                    }   
+                }
+                .videos{
+                    grid-area: fotos;
+                    height: 100%;
+                    width: 100%;
+                    margin-top: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .video{
+                        height: 100%;
+                        width: 400px;
+                        margin-block-end: 25px;
+                        padding: 0px;
+                        @extend %flex-center;
+                        iframe{
+                            height: 250px;
+                            width: 400px;
+                            border-radius: 20px;
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}

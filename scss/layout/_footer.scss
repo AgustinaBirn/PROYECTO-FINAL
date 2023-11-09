@@ -1,0 +1,16 @@
+footer{
+    grid-area: footer;
+    height: 40px;
+    width: 100%;
+    background-color: #7C9070;
+    color: aliceblue;
+    @extend %flex-center;
+    align-content: center;
+    .p-footer{
+        height: 15px;
+        font-size: 12px;
+        margin: 0px;
+        @extend %flex-center;
+        align-content: center;
+    }
+}

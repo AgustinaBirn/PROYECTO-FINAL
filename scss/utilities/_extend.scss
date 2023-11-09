@@ -1,0 +1,135 @@
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-center-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+%viajes{
+    height: 400px;
+    width: 350px;
+}
+.color-fondo{
+    background-color: map-get($colores, fondo );
+}
+.article{
+    height: 100%;
+    width: 100%;
+    @extend %flex-center-evenly;
+    flex-direction: column;
+}
+
+%boton-circulo{
+    width:200px;
+    height:200px;
+    margin-block-end: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: #8b644893;
+    border-radius: 100px;
+    box-shadow: 0 0 20px #80461d93;
+    transition: 1s;
+    @extend %flex-center;
+    &:hover{
+        transform: rotate3d(0,1,0,180deg);
+    }
+    .a-index{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+%boton-pv{
+    width:200px;
+    height:200px;
+    background-color:rgb(182, 156, 117);
+    border-radius: 100px;
+    margin-block-end: 15px;
+    @extend %flex-center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 2s;
+    &:hover{
+        transform: rotate3d(1,0,0,360deg);
+    }
+    a{
+        height: 100%;
+        width: 100%;
+    }
+}
+.texto-itinerario{
+    @extend %flex-center;
+    flex-direction: column;
+    h2{
+        color:#80461d;
+        font-size: 30px;
+    }
+    .p-itinerarios{
+        text-align:center ;
+    }        
+}
+
+.estilo-entrevistas{
+    height: 200px;
+    @extend %flex-center;
+    flex-direction: column;
+    .boton-ent-sob{
+        width:150px;
+        height:150px;
+        margin-block-end: 15px;
+        background-color:rgb(182, 156, 117);
+        border-radius: 100px;
+        border-block: reverse;
+        border-color: #5e4a3d;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1,1.1);
+            background-color:map-get($colores, header);
+            border-bottom: #80461d;
+            
+        }
+        a{
+            height: 100%;
+            width: 100%;
+            @extend %flex-center;
+            font-size: 15px;
+            color: aliceblue;
+            text-decoration: none;
+            transition: 0.5s;
+            &:hover{
+                color: #5e4a3d;
+            }
+        }
+      }
+      .texto-entrevista{
+        height: 100px; 
+        width: 200px;
+        @extend %flex-center;
+        flex-direction: column;
+        text-align: center;
+        h3{
+            font-size: 20px;
+        }
+      }
+  }
+
+.link{
+    a{
+        color: rgb(230, 115, 73);
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.5s;
+    &:hover{
+        color: #80461d;
+        text-decoration: underline;
+    }
+    }
+}

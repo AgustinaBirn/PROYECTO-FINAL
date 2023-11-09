@@ -1,0 +1,13 @@
+@media (max-width: 480px){
+    /* cambio tamaño video | SOBRE MI */ 
+        .video{
+            height: 250px;
+            width: 400px;
+        }
+}
+@media (min-width: 1024px){
+    .video{
+        height: 350px;
+        width: 600px;
+    }
+}
