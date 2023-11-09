@@ -406,7 +406,7 @@ main .article .index__section2 .marketing .index-viajes .viajes-destacados .boto
 }
 
 main .article .main_article-pv {
-  height: 1570px;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -416,6 +416,8 @@ main .article .main_article-pv {
 main .article .main_article-pv .titulos {
   width: 100%;
   height: 40px;
+  margin-top: 30px;
+  margin-block-end: 25px;
   border-radius: 13px;
   background-color: rgba(88, 109, 76, 0.3960784314);
   padding: 5px;
@@ -426,7 +428,7 @@ main .article .main_article-pv .titulos h1 {
   margin: 0px;
 }
 main .article .main_article-pv .itinerarios {
-  height: 1400px;
+  height: 100%;
   width: 100%;
   margin-block-end: 30px;
   margin-top: 30px;
@@ -436,13 +438,14 @@ main .article .main_article-pv .itinerarios {
   align-items: center;
 }
 main .article .main_article-pv .itinerarios .viajes {
-  height: 400px;
+  height: 100%;
   padding-right: 8px;
   padding-left: 8px;
+  margin-block-end: 35px;
 }
 main .article .main_article-pv .itinerarios .viajes .estilo-itinerarios {
   width: 100%;
-  height: 300px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
